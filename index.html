@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduksjon - Kenneth Bernhoff</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <div class="intro">
+        <div class="nav">
+        <img src="img/moon.png" alt="moon icon" id="icon" class="icon">
+        </div>
+        <br />
+        <br />
+        <br />
+        <img src="img/meg.jpg" alt="bilde av meg" class="picture">
+
+        <h1 class="overskrift">Hei, jeg heter <span>Kenneth</span>. Hva kan jeg hjelpe deg med i dag?</h1>
+
+        <p class="introduksjon">Jeg er en "ung" 45 år gammel mann fra Hamar i Innlandet. Jeg liker å drive med litt rare ting, eller i alle fall i noen sine øyne. Jeg liker å teknologi og har alltid hatt store interesse for det. Det nye jeg nå har startet med er koding, jeg har startet på Get Academy. Her skal jeg på ca 20 uker lære meg å kode. Dette er for de som vet hva koding/programmering er et veldig intensivt løp. På 20 uker skal man prøve å tilegne seg kunnskap om koding i forskjellige kodespråk. 
+        Vi skal lære HTML, CSS, JacaScript og C#. 
+
+        Utenom dette har jeg to barn på 6 og 7 år, så annenhver uke har jeg hendene fulle. 
+        I tillegg til dette er noen av hobbyene mine å game litt, gjerne ett par timer om kvelden for å slappe av. Da spiller jeg gjerne spill som PUBG Mobile eller lignende. 
+        I tillegg prøver jeg å få kommet meg på trening noen ganger i uka.
+        </p>
+
+        <h2 class="hobby">HOBBYER:</h2>
+
+        <ul class="hobbyListe">
+            <li>Gaming</li>
+            <li>Trening</li>
+            <li>Film/Serie</li>
+            <li>Gå tur</li>
+            <li>Lære meg nye ting</li>
+        </ul>
+
+        <script>
+            var icon = document.getElementById('icon');
+
+            icon.onclick = function() {
+                document.body.classList.toggle('dark-theme');
+                if (document.body.classList.contains('dark-theme')) {
+                    icon.src = "img/sun.png"
+                } else {
+                    icon.src = "img/moon.png"
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
